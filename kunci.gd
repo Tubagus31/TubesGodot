@@ -5,6 +5,7 @@ var scene = preload("res://portal.tscn")
 var instance = scene.instance()
 
 func _ready():
+	#get_parent().get_node("kunci/Sprite").visible = false
 	pass 
 
 func _process(delta):
@@ -13,19 +14,11 @@ func _process(delta):
 func _on_kunci_body_entered(body):
 	var i = 0
 	if body is Player:
-<<<<<<< Updated upstream
-#		print("kena")
-#		var instance = scene.instance()
-		get_node("kunci").visible = false
-		get_parent().get_node("kunci2").visible = true
-=======
-		LifeCounter.lives -= 1
+		#LifeCounter.lives -= 1
+		LifeCounter.collectedKey += 1
+		#get_node("portal").visible = true
 		queue_free()
 		
 		#get_node("kunci").visible = false
-		#get_node("portal/portal").visible = true
->>>>>>> Stashed changes
 #		queue_free()
 	pass
-
-

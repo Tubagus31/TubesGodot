@@ -12,5 +12,5 @@ script = ExtResource( 2 )
 [node name="portal" parent="." instance=ExtResource( 1 )]
 
 [node name="CollisionShape2" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.111274, 2.02749, -0.133392 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1.414, 0.111274, 2.02749, -0.133392 )
 shape = SubResource( 4 )
