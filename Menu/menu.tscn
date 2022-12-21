@@ -12,8 +12,8 @@ font_data = ExtResource( 3 )
 script = ExtResource( 2 )
 
 [node name="BgMenu" type="Sprite" parent="."]
-position = Vector2( 519, 305 )
-scale = Vector2( 0.530208, 0.548148 )
+position = Vector2( 512.5, 301.5 )
+scale = Vector2( 0.536979, 0.55463 )
 texture = ExtResource( 1 )
 
 [node name="Play" type="Button" parent="."]

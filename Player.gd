@@ -6,8 +6,10 @@ const MAX_SPEED = 20
 const JUMP_SPEED = 18
 const ACCEL = 4.5
 
-var dir = Vector3()
+var velocity = Vector2()
+var knock_force = 10
 
+var dir = Vector3()
 const DEACCEL= 16
 const MAX_SLOPE_ANGLE = 40
 
@@ -19,7 +21,6 @@ var MOUSE_SENSITIVITY = 0.05
 func _ready():
 	camera = $CameraPivot/Camera
 	rotation_helper = $CameraPivot
-
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _physics_process(delta):
@@ -93,3 +94,4 @@ func _input(event):
 		var camera_rot = rotation_helper.rotation_degrees
 		camera_rot.x = clamp(camera_rot.x, -70, 70)
 		rotation_helper.rotation_degrees = camera_rot
+
